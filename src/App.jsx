@@ -10,18 +10,18 @@ function App() {
     .catch((err)=>console.log(err))
 },[]);
   return (
-    <div className="body">
+    <body>
       {post.map((e)=>//mapping the hook data
       (
-          <div className='container'>
+          <span>
             <p><b>userId</b>: {e.userId}</p>
             <p><b>id</b>: {e.id}</p>
             <p><b>title</b>: {e.title}</p>
             <p><b>body</b>: {e.body}</p>
-          </div>
+          </span>
         ))
       }
-    </div>
+    </body>
   )
 }
 
